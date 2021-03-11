@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form method="GET"> <!--tambien method="POST":con parametros invisibles, IMPORTANCTE*action:solo en otro lenguaje, enctype:subir archivos -->
+        <!--<label for="nombre">Escriba su nombre</label><br>-->
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"><br> <!-- pattern="[A-Z]{3}[0-9]{4}" para dar un formato obligatorio-->
+        <!--<label for="apellido">Escriba su apellido</label><br>-->
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <form action="get">
+        <label for="usuario">Usuario:</label><br>
+        <input type="text" name="usuario" id="usuario"><br>
+        <label for="clave">Contraseña:</label><br>
+        <input type="password" name="clave" id="clave"><br>
+        <p>Sexo</p>
+        <Label for="masculino">masculino</Label>
+        <input type="radio" name="sexo" id="masculino" value="h">
+        <label for="femenino">femenino</label>
+        <input type="radio" name="sexo" id="femenino" value="f"><br>
+        <p>Servicos publicos qu posee</p>
+        <label for="agua">Agua potable:</label>
+        <input type="checkbox" name="agua" id="agua"value="agua">
+        <p></p>
+        <label for="luz">luz:</label>
+        <input type="checkbox" name="luz" id="luz"value="luz">
+        <p></p>
+        <label for="tele">telefono:</label>
+        <input type="checkbox" name="tele" id="tele"value="tele">
+        <p></p>
+        <label for="foto">Foto de perfil</label>
+        <input type="file" name="foto" id="foto">
+        <p></p>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" min="0" max="120" step="1">
+        <p></p>
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha">
+        <p></p>
+        <label for="hora">hora</label>
+        <input type="time" name=hora id="hora">
+        <p></p>
+        <label for="mes">Mes:</label>
+        <input type="month" name="mes" id="mes">
+        <p></p>
+        <label for="semana">Semana:</label>
+        <input type="week" name="semana" id="semana">
+        <p></p>
+        <label for="nota">Nota Parcial:</label>
+        <input type="range" name="nota" id="nota" min="0" max="100" step="1" value="70">
+        <p></p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Correo@domino.com">
+        <p></p>
+        <label for="color">Color favorito:</label>
+        <input type="color" name="color" id="color">
+        <p></p>
+        <input type="submit" value="Guardar">
+        <input type="reset" value="Cancelar">
+        <input type="Button" value="Boton">
+    </form>
+</body>
+</html>
